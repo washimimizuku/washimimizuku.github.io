@@ -3,4 +3,4 @@ layout: post
 title: Palavras reservadas no mysql
 ---
 
-
+Ontem tive uns problemas na criação de uma tabela no mysql, em que alguns dos campos eram palavras reservadas. A query dava erro de sintaxe. A solução é bastante simples. Em vez de:<br /><br /><pre>CREATE TABLE teste (<br />  id int(11) NOT NULL auto_increment,<br />  from varchar(20),<br />  to varchar(12),<br />  PRIMARY KEY (id)<br />);</pre><br />faz-se:<br /><br /><pre>CREATE TABLE teste (<br />  id int(11) NOT NULL auto_increment,<br />  `from` varchar(20),<br />  `to` varchar(12),<br />  PRIMARY KEY (id)<br />);</pre><br />Depois de saber é simples...
