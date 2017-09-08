@@ -9,7 +9,7 @@
 title: Washimimizuku
 email: nbarreto@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Life of Nuno Barreto
+  Here is where I share whatever I want.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://washimimizuku.github.io" # the base hostname & protocol for your site
 twitter_username: nbarr

@@ -1,6 +1,0 @@
----
-layout: post
-title: Internet Explorer e CSS
----
-
-Apelo a todos os utilizadores de internet que deixem de usar o Internet Explorer, é mesmo muito mau. Usem o <a href="http://www.mozilla.org/products/firefox/">Firefox</a>, ou o <a href="http://www.opera.com">Opera</a>, e passado pouco tempo vão ficar espantados em como conseguiram viver com o Internet Explorer tanto tempo. Qualquer browser da esquina tem mais funcionalidades. E como se não bastasse, interpreta mal o código.<br /><br />É incrível como é complicado fazer um site aparecer bem em Internet Explorer. Principalmente se estivermos a usar CSS para o layout. Farto de andar a dar a volta à cabeça, acabei por recorrer a este truque baixo:<br /><br />div#left {<br />  float:left;<br />  width:5.9em;<br />  //width:20%;<br />}<br /><br />O width de cima é para browsers decentes (Firefox, Safari, Opera), e o de baixo é para o Internet Explorer. Porque é que isto funciona bem assim? Porque o Internet Explorer, estupidamente, não reconhece comentários no CSS. Logo, interpreta as linhas comentadas. Como os outros não interpretam, continuam a funcionar como deve de ser. Podia ter arranjado uma solução muito mais elegante, mas tenho coisas mais interessantes para fazer com a vida, como contemplar Deus, passar tempo com a minha linda esposa, e observar pássaros.
